@@ -15,70 +15,73 @@ import ListIcon from '@mui/icons-material/List';
 
 export default function InsetList() {
   return (
-    <List
-      sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
-      aria-label="contacts"
-    >
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <ListIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="Header" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <CodeIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="projects" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <AccountBoxIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="about" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <BookIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="blogs" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <SchoolIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="education" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-      <ListItem disablePadding>
-        <ListItemButton>
-          <ListItemIcon>
-            <WorkIcon />
-          </ListItemIcon>
-          <Link href="#">
-            <ListItemText primary="experience" />
-          </Link>
-        </ListItemButton>
-      </ListItem>
-    </List>
+    <div>
+      <p className="text-center"><b>Contents</b></p>
+      <List
+        sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+        aria-label="contacts"
+      >
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <ListIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="Header" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <CodeIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="projects" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <AccountBoxIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="about" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <BookIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="blogs" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <SchoolIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="education" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <ListItemIcon>
+              <WorkIcon />
+            </ListItemIcon>
+            <Link href="#">
+              <ListItemText primary="experience" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </div>
   );
 }
