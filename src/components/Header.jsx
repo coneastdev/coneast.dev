@@ -4,9 +4,9 @@ import Profile from './Profile'
 import SiteMap from './SiteMap';
 import Contents from './Contents';
 import Links from './Links'
+import Skills from './Skills'
 
 import Paper from '@mui/material/Paper';
-import Avatar from '@mui/material/Avatar';
 
 export default function InsetList() {
   return (
@@ -17,6 +17,9 @@ export default function InsetList() {
         </Paper>
         <Paper className="m-5">
           <Links />
+        </Paper>
+        <Paper className="m-5">
+          <Skills />
         </Paper>
       </div>
       <div className="w-32 flex-1 m-5">
