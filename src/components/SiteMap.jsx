@@ -1,4 +1,4 @@
-import '../styles/global.css'
+import '../styles/global.css';
 
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -6,7 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
-import Link from '@mui/material/Link'
+import Link from '@mui/material/Link';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import BookIcon from '@mui/icons-material/Book';

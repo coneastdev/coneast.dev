@@ -4,7 +4,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
-import Link from '@mui/material/Link'
+import Link from '@mui/material/Link';
 import CodeIcon from '@mui/icons-material/Code';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import BookIcon from '@mui/icons-material/Book';
