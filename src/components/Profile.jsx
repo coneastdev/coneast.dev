@@ -14,7 +14,7 @@ export default function InsetList() {
             className="m-5"
             />
           <div className="flex-2 m-5">
-            <p className="text-6xl">Connor Eastwood</p>
+            <p className="text-5xl">Connor Eastwood</p>
             <p className="text-4xl">Software Developer</p>
             <p className="text-2xl">Student at Middlesbrough college</p>
           </div>
