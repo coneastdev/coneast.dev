@@ -5,12 +5,13 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 import Link from '@mui/material/Link'
-
-import GitHubIcon from '@mui/icons-material/GitHub';
+import CodeIcon from '@mui/icons-material/Code';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import BookIcon from '@mui/icons-material/Book';
-import HandymanIcon from '@mui/icons-material/Handyman';
-import LinkIcon from '@mui/icons-material/Link';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import SchoolIcon from '@mui/icons-material/School';
+import WorkIcon from '@mui/icons-material/Work';
+
+import ListIcon from '@mui/icons-material/List';
 
 export default function InsetList() {
   return (
@@ -21,7 +22,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <GitHubIcon />
+            <ListIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="Header" />
@@ -31,7 +32,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <BookIcon />
+            <CodeIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="projects" />
@@ -41,7 +42,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <HandymanIcon />
+            <AccountBoxIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="about" />
@@ -51,7 +52,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <LinkIcon />
+            <BookIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="blogs" />
@@ -61,7 +62,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <AdminPanelSettingsIcon />
+            <SchoolIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="education" />
@@ -71,7 +72,7 @@ export default function InsetList() {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            <AdminPanelSettingsIcon />
+            <WorkIcon />
           </ListItemIcon>
           <Link href="#">
             <ListItemText primary="experience" />
