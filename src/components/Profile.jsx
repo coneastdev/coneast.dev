@@ -6,7 +6,7 @@ import Avatar from '@mui/material/Avatar';
 export default function InsetList() {
   return (
     <div className="dark:bg-stone-800 dark:text-white">
-        <div className="flex">
+        <div className="md:flex">
           <Avatar
             alt="Profile Picture"
             src="/josh.jpg"
