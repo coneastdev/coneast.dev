@@ -3,7 +3,8 @@ import '../styles/global.css';
 import Profile from './Profile'
 import SiteMap from './SiteMap';
 import Contents from './Contents';
-import Links from './Links'
+import Contacts from './Contacts'
+import Socials from './Socials'
 import Skills from './Skills'
 
 import Paper from '@mui/material/Paper';
@@ -15,10 +16,15 @@ export default function InsetList() {
         <Paper elevation={3} className="m-5">
           <Profile />
         </Paper>
-        <Paper className="m-5">
-          <Links />
-        </Paper>
-        <Paper className="m-5">
+        <div className="md:flex">
+          <Paper className="m-5 flex-1">
+            <Contacts />
+          </Paper>
+          <Paper className="m-5 flex-1">
+            <Socials />
+          </Paper>
+        </div>
+        <Paper elevation={3} className="m-5">
           <Skills />
         </Paper>
       </div>
