@@ -10,8 +10,8 @@ import Paper from '@mui/material/Paper';
 
 export default function InsetList() {
   return (
-    <div className="flex bg-linear-to-tr from-slate-200 via-slate-50 to-slate-200">
-      <div className="w-32 flex-1 m-5">
+    <div className="md:flex bg-linear-to-tr from-slate-200 via-slate-50 to-slate-200">
+      <div className="md:w-32 flex-1 m-5">
         <Paper elevation={3} className="m-5">
           <Profile />
         </Paper>
@@ -22,7 +22,7 @@ export default function InsetList() {
           <Skills />
         </Paper>
       </div>
-      <div className="w-32 flex-1 m-5">
+      <div className="md:w-32 flex-1 m-5">
         <Paper elevation={3} className="m-5">
           <SiteMap />
         </Paper>
