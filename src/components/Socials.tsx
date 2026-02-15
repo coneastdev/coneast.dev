@@ -10,7 +10,7 @@ import DevpostLogo from '../assets/images/devpost-svgrepo-com.svg';
 export default function StandardImageList() {
   return (
     <div className="dark:bg-stone-800 dark:text-white">
-      <p className="text-center"><b>Socials & Contacts</b></p><br />
+      <p className="text-center"><b>Socials</b></p><br />
       <ImageList cols={3} className="m-3">
         <ImageListItem key="GitHub">
           <Link href="https://github.com/coneastdev">
