@@ -7,12 +7,13 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 export default function ButtonAppBar() {
   const toggleDarkMode = () => {
-    console.log("Button clicked!");
     const htmlElement = document.getElementsByTagName("html")[0];
     if (htmlElement.className === "dark") {
       htmlElement.className = "";
+      localStorage.setItem("darkMode", false)
     } else {
       htmlElement.className = "dark";
+      localStorage.setItem("darkMode", true)
     }
   };
 

@@ -13,3 +13,10 @@ import Header from '../components/Header.jsx';
 	<Nav client:only="react" />
 	<Header />
 </Layout>
+
+<script>
+	const htmlElement = document.getElementsByTagName("html")[0];
+    if (localStorage.getItem("darkMode") === "true") {
+      htmlElement.className = "dark";
+    }
+</script>

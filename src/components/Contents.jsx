@@ -15,16 +15,16 @@ import ListIcon from '@mui/icons-material/List';
 
 export default function InsetList() {
   return (
-    <div>
+    <div className="dark:bg-stone-800 dark:text-white">
       <p className="text-center"><b>Contents</b></p>
       <List
-        sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+        sx={{ width: '100%', maxWidth: 360, }}
         aria-label="contacts"
       >
         <ListItem disablePadding>
           <ListItemButton>
-            <ListItemIcon>
-              <ListIcon />
+            <ListItemIcon >
+              <ListIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="Header" />
@@ -34,7 +34,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <CodeIcon />
+              <CodeIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="projects" />
@@ -44,7 +44,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <AccountBoxIcon />
+              <AccountBoxIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="about" />
@@ -54,7 +54,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <BookIcon />
+              <BookIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="blogs" />
@@ -64,7 +64,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <SchoolIcon />
+              <SchoolIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="education" />
@@ -74,7 +74,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <WorkIcon />
+              <WorkIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
               <ListItemText primary="experience" />

@@ -2,7 +2,7 @@ import '../styles/global.css';
 
 export default function StandardImageList() {
   return (
-    <div>
+    <div className="dark:bg-stone-800 dark:text-white">
       <p className="text-center"><b>Skills</b></p>
       <div className="flex m-0.5">
         <div className="flex-1">

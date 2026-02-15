@@ -16,17 +16,17 @@ import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 
 export default function InsetList() {
   return (
-    <div>
+    <div className="dark:bg-stone-800 dark:text-white">
       <p className="text-center"><b>Site Map</b></p>
       <List
-        sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}
+        sx={{ width: '100%', maxWidth: 360, }}
         aria-label="contacts"
       >
         
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <GitHubIcon />
+              <GitHubIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="https://github.coneast.dev">
               <ListItemText primary="github.coneast.dev" />
@@ -36,7 +36,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <BookIcon />
+              <BookIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="https://blogs.coneast.dev">
               <ListItemText primary="blogs.coneast.dev" />
@@ -46,7 +46,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <HandymanIcon />
+              <HandymanIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="https://tools.coneast.dev">
               <ListItemText primary="tools.coneast.dev" />
@@ -56,7 +56,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <LinkIcon />
+              <LinkIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="https://links.coneast.dev">
               <ListItemText primary="links.coneast.dev" />
@@ -66,7 +66,7 @@ export default function InsetList() {
         <ListItem disablePadding>
           <ListItemButton>
             <ListItemIcon>
-              <AdminPanelSettingsIcon />
+              <AdminPanelSettingsIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="https://admin.coneast.dev">
               <ListItemText primary="admin.coneast.dev" />

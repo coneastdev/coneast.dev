@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 
 export default function StandardImageList() {
   return (
-    <div>
+    <div className="dark:bg-stone-800 dark:text-white">
       <p className="text-center"><b>Socials & Contacts</b></p><br />
       <ImageList cols={6} rowHeight={164} className="m-3">
       {itemData.map((item) => (
