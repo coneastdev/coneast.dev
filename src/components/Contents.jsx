@@ -27,7 +27,7 @@ export default function InsetList() {
               <ListIcon className="dark:text-white" />
             </ListItemIcon>
             <Link href="#">
-              <ListItemText primary="Header" />
+              <ListItemText primary="header" />
             </Link>
           </ListItemButton>
         </ListItem>
