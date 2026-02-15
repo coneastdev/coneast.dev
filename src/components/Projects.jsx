@@ -44,7 +44,7 @@ export default function AlternateTimeline() {
                         </Typography>
                     </CardContent>
                     <CardActions  className="dark:bg-stone-800">
-                        <a href="https://github.com/coneastdev/coneast.dev" target="_blank"><Button size="small">GitHub</Button></a>
+                        <Button size="small" component="a" href="https://github.com/coneastdev/coneast.dev" target="_blank" rel="noopener noreferrer">GitHub</Button>
                         <Button size="small" disabled>blog</Button>
                     </CardActions>
                     </Card>
@@ -72,7 +72,7 @@ export default function AlternateTimeline() {
                         </Typography>
                     </CardContent>
                     <CardActions  className="dark:bg-stone-800">
-                        <a href="https://github.com/coneastdev/py-ffmpeg-gui" target="_blank"><Button size="small">GitHub</Button></a>
+                        <Button size="small" component="a" href="https://github.com/coneastdev/py-ffmpeg-gui" target="_blank" rel="noopener noreferrer">GitHub</Button>
                         <Button size="small" disabled>blog</Button>
                     </CardActions>
                     </Card>
@@ -100,7 +100,7 @@ export default function AlternateTimeline() {
                         </Typography>
                     </CardContent>
                     <CardActions  className="dark:bg-stone-800">
-                        <a href="https://github.com/coneastdev/give-me-the-lyrics/" target="_blank"><Button size="small">GitHub</Button></a>
+                        <Button size="small" component="a" href="https://github.com/coneastdev/give-me-the-lyrics/" target="_blank" rel="noopener noreferrer">GitHub</Button>
                         <Button size="small" disabled>blog</Button>
                     </CardActions>
                     </Card>
