@@ -11,8 +11,8 @@ export default function StandardImageList() {
   return (
     <div className="dark:bg-stone-800 dark:text-white">
       <p className="text-center"><b>Socials</b></p><br />
-      <ImageList cols={3} className="m-3">
-        <ImageListItem key="GitHub">
+      <ImageList cols={3}>
+        <ImageListItem key="GitHub" className="m-1">
           <Link href="https://github.com/coneastdev">
             <img
               srcSet="https://github.com/edent/SuperTinyIcons/raw/refs/heads/master/images/svg/github.svg?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
@@ -22,7 +22,7 @@ export default function StandardImageList() {
             />
           </Link>
         </ImageListItem>
-        <ImageListItem key="Credly">
+        <ImageListItem key="Credly" className="m-1">
           <Link href="https://www.credly.com/users/connor-eastwood/badges">
             <img
               src={CredlyLogo.src}
@@ -31,7 +31,7 @@ export default function StandardImageList() {
             />
           </Link>
         </ImageListItem>
-        <ImageListItem key="Dev Post">
+        <ImageListItem key="Dev Post" className="m-1">
           <Link href="https://example.com">
             <img
               src={DevpostLogo.src}
