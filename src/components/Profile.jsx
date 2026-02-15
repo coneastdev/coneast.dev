@@ -1,15 +1,15 @@
 import '../styles/global.css';
 
 import Avatar from '@mui/material/Avatar';
-
+import UserAvatar from '../assets/images/josh.jpg'
 
 export default function InsetList() {
   return (
     <div className="dark:bg-stone-800 dark:text-white">
         <div className="md:flex">
           <Avatar
-            alt="Profile Picture"
-            src="/josh.jpg"
+            alt="My user avatar"
+            src={UserAvatar.src}
             sx={{ width: 128, height: 128 }}
             className="m-5"
             />
