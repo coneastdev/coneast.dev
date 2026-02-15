@@ -13,7 +13,7 @@ export default function StandardImageList() {
       <p className="text-center"><b>Socials</b></p><br />
       <ImageList cols={3}>
         <ImageListItem key="GitHub" className="m-1">
-          <Link href="https://github.com/coneastdev">
+          <Link href="https://github.com/coneastdev" target="_blank">
             <img
               srcSet="https://github.com/edent/SuperTinyIcons/raw/refs/heads/master/images/svg/github.svg?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
               src="https://github.com/edent/SuperTinyIcons/raw/refs/heads/master/images/svg/github.svg?w=164&h=164&fit=crop&auto=format"
@@ -23,7 +23,7 @@ export default function StandardImageList() {
           </Link>
         </ImageListItem>
         <ImageListItem key="Credly" className="m-1">
-          <Link href="https://www.credly.com/users/connor-eastwood/badges">
+          <Link href="https://www.credly.com/users/connor-eastwood/badges" target="_blank">
             <img
               src={CredlyLogo.src}
               alt="Credly"
@@ -32,7 +32,7 @@ export default function StandardImageList() {
           </Link>
         </ImageListItem>
         <ImageListItem key="Dev Post" className="m-1">
-          <Link href="https://devpost.com/coneastdev">
+          <Link href="https://devpost.com/coneastdev" target="_blank">
             <img
               src={DevpostLogo.src}
               alt="Dev Post"

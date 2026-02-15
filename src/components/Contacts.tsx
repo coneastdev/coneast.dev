@@ -30,7 +30,7 @@ export default function StandardImageList() {
           </Link>
         </ImageListItem>
         <ImageListItem key="LinkedIn" className="m-1">
-          <Link href="https://www.linkedin.com/in/coneastdev/">
+          <Link href="https://www.linkedin.com/in/coneastdev/"  target="_blank">
             <img
               srcSet="https://github.com/edent/SuperTinyIcons/raw/refs/heads/master/images/svg/linkedin.svg?w=164&h=164&fit=crop&auto=format&dpr=2 2x"
               src="https://github.com/edent/SuperTinyIcons/raw/refs/heads/master/images/svg/linkedin.svg?w=164&h=164&fit=crop&auto=format"
