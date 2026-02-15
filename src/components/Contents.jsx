@@ -4,14 +4,13 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
+import ListIcon from '@mui/icons-material/List';
 import Link from '@mui/material/Link';
 import CodeIcon from '@mui/icons-material/Code';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import BookIcon from '@mui/icons-material/Book';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
-
-import ListIcon from '@mui/icons-material/List';
 
 export default function InsetList() {
   return (
