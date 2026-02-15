@@ -32,7 +32,7 @@ export default function StandardImageList() {
           </Link>
         </ImageListItem>
         <ImageListItem key="Dev Post" className="m-1">
-          <Link href="https://example.com">
+          <Link href="https://devpost.com/coneastdev">
             <img
               src={DevpostLogo.src}
               alt="Dev Post"
