@@ -29,12 +29,13 @@ export default function AlternateTimeline() {
             </TimelineSeparator>
             <TimelineContent>
                 <Card sx={{ maxWidth: 500 }}>
+                    <a href="https://github.com/coneastdev/coneast.dev" target="_blank">
                     <CardMedia
                         sx={{ height: 140 }}
                         image="https://astro.build/_astro/cover.CebdgvR7_22T2Je.webp?dpl=6991a1cdec80e1000870680f"
                         title="coneast.dev"
                         loading="lazy"
-                    />
+                    /></a>
                     <CardContent className="dark:bg-stone-800 dark:text-stone-200">
                         <Typography gutterBottom variant="h5" component="div">
                         coneast.dev
@@ -57,12 +58,13 @@ export default function AlternateTimeline() {
             </TimelineSeparator>
             <TimelineContent className="flex justify-end">
                 <Card sx={{ maxWidth: 500 }}>
+                    <a href="https://github.com/coneastdev/py-ffmpeg-gui" target="_blank">
                     <CardMedia
                         sx={{ height: 140 }}
                         image="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/FFmpeg_Logo_new.svg/3840px-FFmpeg_Logo_new.svg.png"
                         title="py-ffmpeg-gui"
                         loading="lazy"
-                    />
+                    /></a>
                     <CardContent className="dark:bg-stone-800 dark:text-stone-200 text-left">
                         <Typography gutterBottom variant="h5" component="div">
                         py ffmpeg gui
@@ -85,12 +87,13 @@ export default function AlternateTimeline() {
             </TimelineSeparator>
             <TimelineContent>
                 <Card sx={{ maxWidth: 500 }}>
+                    <a href="https://github.com/coneastdev/give-me-the-lyrics" target="_blank">
                     <CardMedia
                         sx={{ height: 140 }}
                         image="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/The_Sounds_of_Earth_-_GPN-2000-001976.jpg/1920px-The_Sounds_of_Earth_-_GPN-2000-001976.jpg"
                         title="give-me-the-lyrics"
                         loading="lazy"
-                    />
+                    /></a>
                     <CardContent className="dark:bg-stone-800 dark:text-stone-200">
                         <Typography gutterBottom variant="h5" component="div">
                         give me the lyrics
