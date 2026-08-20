@@ -1,5 +1,7 @@
 # coneast.dev
 
+![image of the site](https://github.com/coneastdev/media/blob/main/projects/coneastdev-site.png?raw=true)
+
 Main website for the software developer coneastdev.
 
 ## Licence
