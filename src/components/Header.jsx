@@ -1,43 +1,40 @@
-import '../styles/global.css';
-
-import Profile from './Profile'
-import SiteMap from './SiteMap';
-import Contents from './Contents';
-import Contacts from './Contacts'
-import Socials from './Socials'
-import Skills from './Skills'
-
+import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
+import Container from '@mui/material/Container';
+import Avatar from '@mui/material/Avatar';
+import IconButton from '@mui/material/IconButton';
+import Alert from '@mui/material/Alert';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import { useState } from 'react';
 
-export default function InsetList() {
+export default function SimplePaper() {
+    const [isVisible, setIsVisible] = useState(true);
+
   return (
-    <div className="md:flex bg-linear-to-tr from-slate-200 via-slate-50 to-slate-200 dark:from-stone-950 dark:via-stone-900 dark:to-stone-950">
-      <div className="md:w-32 flex-7 m-5">
-        <Paper elevation={3} className="m-5">
-          <Profile />
-        </Paper>
-        <div className="md:flex">
-          <Paper className="m-5 flex-1">
-            <Contacts />
-          </Paper>
-          <Paper className="m-5 flex-1">
-            <Socials />
-          </Paper>
-        </div>
-        <Paper elevation={3} className="m-5">
-          <Skills />
-        </Paper>
-      </div>
-      <div className="md:flex-1 md:w-32"></div>
-      {/* <div className="md:w-32 flex-3 m-5">
-        <Paper elevation={3} className="m-7">
-          <SiteMap />
-        </Paper>
-        <Paper elevation={3} className="m-7">
-          <Contents />
-        </Paper>
-      </div> */}
-      <div className="md:flex-1 md:w-32"></div>
-    </div>
+    <Container maxWidth={false} 
+    disableGutters 
+    sx={{ 
+        height: '100vh', 
+        width: '100%',
+        backgroundColor: '#222',
+        textAlign: 'center',
+    }}
+    >
+        { isVisible && <Alert id='AlertNotice' severity="info" sx={{width: '50%', position: 'absolute', left: '25%', top: '2.5%'}} onClose={() => setIsVisible(false)}>This website is still under development, please be aware that some things may be place holders or incomplete.</Alert>}
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '90%' }}>
+            <Paper elevation={13} sx={{
+                width: '40%',
+                height: '60%',
+                margin: '0 auto',
+                backgroundColor: '#333',
+            }}
+            >
+                <Avatar alt="Profile Picture" src='/src/assets/images/josh.jpg' />
+            </Paper>
+        </Box>
+        <IconButton color="primary" aria-label="Scroll down arrow" size="large">
+            <KeyboardDoubleArrowDownIcon fontSize="inherit" />
+        </IconButton>
+    </Container>
   );
 }
