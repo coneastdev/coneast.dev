@@ -20,6 +20,8 @@ import WorkIcon from '@mui/icons-material/Work';
 import profileImage from '../assets/images/josh.jpg';
 import collegeImage from '../assets/images/middlesbrough-college-favicon-96x96.webp';
 import workImage from '../assets/images/cropped-dink-favicon-192x192.png';
+import BcsIcon from '../assets/images/BCS_logo_2021.svg';
+import CreadlyIcon from '../assets/images/credly-svgrepo-com.svg';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +51,10 @@ function a11yProps(index) {
     id: `simple-tab-${index}`,
     'aria-controls': `simple-tabpanel-${index}`,
   };
+}
+
+function scrollTo(elementId) {
+    document.getElementById(elementId).scrollIntoView({ behavior: 'smooth', block: 'start'})
 }
 
 export default function SimplePaper() {
@@ -115,6 +121,7 @@ export default function SimplePaper() {
                             <Tab sx={{color: '#fffefe'}} label="Proficient" {...a11yProps(0)} />
                             <Tab sx={{color: '#fffefe'}} label="Learning" {...a11yProps(1)} />
                             <Tab sx={{color: '#fffefe'}} label="Interested" {...a11yProps(2)} />
+                            <Tab sx={{color: '#fffefe'}} label="Certification" {...a11yProps(3)} />
                             </Tabs>
                         </Box>
                         <CustomTabPanel value={value} index={0} >
@@ -186,11 +193,23 @@ export default function SimplePaper() {
                                 </Link>
                             </Container>
                         </CustomTabPanel>
+                        <CustomTabPanel value={value} index={3}>
+                            <Container sx={{display: 'flex'}}>
+                                <Link margin={SkillMargin} sx={{color: '#fffefe'}} href="https://www.bcs.org/" target="_blank" rel="noopener noreferrer">   
+                                    <img src={BcsIcon.src} width={SkillSize * 0.8} /><br />
+                                    BCS Student
+                                </Link>
+                                <Link margin={SkillMargin} sx={{color: '#fffefe'}} href="https://www.credly.com/users/connor-eastwood/badges" target="_blank" rel="noopener noreferrer">   
+                                    <img src={CreadlyIcon.src} width={SkillSize} /><br />
+                                    creadly
+                                </Link>
+                            </Container>
+                        </CustomTabPanel>
                     </Box>
                 </Container>
             </Paper>
         </Box>
-        <IconButton color="primary" aria-label="Scroll down arrow" size="large">
+        <IconButton color="primary" aria-label="Scroll down arrow" size="large" onClick={() => scrollTo("project-container")}>
             <KeyboardDoubleArrowDownIcon fontSize="inherit" />
         </IconButton>
     </Container>
