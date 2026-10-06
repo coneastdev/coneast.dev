@@ -191,5 +191,5 @@ export default function SimplePaper() {
             <KeyboardDoubleArrowDownIcon fontSize="inherit" />
         </IconButton>
     </Container>
-    );
+  );
 }
