@@ -17,6 +17,9 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
+import profileImage from '../assets/images/josh.jpg';
+import collegeImage from '../assets/images/middlesbrough-college-favicon-96x96.webp';
+import workImage from '../assets/images/cropped-dink-favicon-192x192.png';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -81,7 +84,7 @@ export default function SimplePaper() {
             >
                 <br />
                 <Container sx={{ display: 'flex', widows: '100%', height: '40%', color: '#fffefe' }}>
-                    <Avatar alt="Profile Picture" src='/src/assets/images/josh.jpg' sx={{ width: '10vw', height: '10vw' }} />
+                    <Avatar alt="Profile Picture" src={profileImage.src} sx={{ width: '10vw', height: '10vw' }} />
                     <Container sx={{ textAlign: 'left' }}>
                         <Typography variant="h3" gutterBottom sx={{margin: '0'}}>
                             Connor
@@ -90,8 +93,8 @@ export default function SimplePaper() {
                             @coneastdev
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src="/src//assets/images/middlesbrough-college-favicon-96x96.webp" /> T-Level Digital Software Development</Link><br />
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src="/src//assets/images/cropped-dink-favicon-192x192.png" /> Junior Game Development Assistant</Link>
+                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src={collegeImage.src} /> T-Level Digital Software Development</Link><br />
+                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src={workImage.src} /> Junior Game Development Assistant</Link>
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
                             
@@ -191,5 +194,5 @@ export default function SimplePaper() {
             <KeyboardDoubleArrowDownIcon fontSize="inherit" />
         </IconButton>
     </Container>
-  );
+    );
 }
