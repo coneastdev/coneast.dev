@@ -2,10 +2,27 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@keyframes btnSlide {
+  from {
+    transform: translateY(75px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 p {
     font-family: JetBrains Mono;
 }
 
 a {
     font-family: JetBrains Mono;
+}
+
+.scrollBtn {
+  animation: btnSlide 3s 1s both;
+}
+
+@media screen and (width <= 900) {
+    
 }
