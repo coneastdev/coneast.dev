@@ -17,7 +17,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
-import profileImage from '../assets/images/josh.jpg';
+import profileImage from '../assets/images/aboutme-bg/profilepic.jpg';
 import collegeImage from '../assets/images/middlesbrough-college-favicon-96x96.webp';
 import workImage from '../assets/images/cropped-dink-favicon-192x192.png';
 import BcsIcon from '../assets/images/BCS_logo_2021.svg';
@@ -79,7 +79,7 @@ export default function SimplePaper() {
         textAlign: 'center',
     }}
     >
-        { isVisible && <Alert id='AlertNotice' severity="info" sx={{width: '50%', position: 'absolute', left: '25%', top: '2.5%'}} onClose={() => setIsVisible(false)}>This website is still under development, please be aware that some things may be place holders or incomplete.</Alert>}
+        {/* { isVisible && <Alert id='AlertNotice' severity="info" sx={{width: '50%', position: 'absolute', left: '25%', top: '2.5%'}} onClose={() => setIsVisible(false)}>This website is still under development, please be aware that some things may be place holders or incomplete.</Alert>} */}
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '90%' }}>
             <Paper elevation={13} sx={{
                 width: '40%',

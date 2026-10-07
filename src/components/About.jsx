@@ -15,6 +15,32 @@ import Typography from '@mui/material/Typography';
 import Masonry from '@mui/lab/Masonry';
 import { styled } from '@mui/material/styles';
 
+import Bananas from '../assets/images/aboutme-bg/bananas.jpg';
+import Ducks from '../assets/images/aboutme-bg/ducks.jpg';
+import Edinburgh from '../assets/images/aboutme-bg/Edinburgh.jpg';
+import Edinburgh2 from '../assets/images/aboutme-bg/Edinburgh-2.jpg';
+import Edinburgh3 from '../assets/images/aboutme-bg/Edinburgh-3.jpg';
+import Edinburgh4 from '../assets/images/aboutme-bg/Edinburgh-4.jpg';
+import Edinburgh5 from '../assets/images/aboutme-bg/Edinburgh-5.jpg';
+import Edinburgh6 from '../assets/images/aboutme-bg/Edinburgh-6.jpg';
+import Halt from '../assets/images/aboutme-bg/halt.jpg';
+import Harry from '../assets/images/aboutme-bg/harry.jpg'; 
+import Iris from '../assets/images/aboutme-bg/iris.jpg';
+import Iris2 from '../assets/images/aboutme-bg/iris-2.jpg';
+import Josh from '../assets/images/aboutme-bg/josh.jpg';
+import Kermit from '../assets/images/aboutme-bg/kermit.jpg';
+import Loki from '../assets/images/aboutme-bg/loki.jpg';
+import MbroSnow from '../assets/images/aboutme-bg/mbro-snow.jpg';
+import NorthYorkHill from '../assets/images/aboutme-bg/north-york-hill.jpg';
+import NorthYorkHill2 from '../assets/images/aboutme-bg/north-york-hill-2.jpg';
+import PcBuild from '../assets/images/aboutme-bg/pc-build.jpg';
+import Presentation from '../assets/images/aboutme-bg/presentation.jpeg';
+import Josh2 from '../assets/images/josh.jpg';
+import Robot from '../assets/images/aboutme-bg/robot.png';
+import Unreal from '../assets/images/aboutme-bg/unreal.png';
+import WhitbyViaDuct from '../assets/images/aboutme-bg/whitby-viaduct.jpg';
+import WhitleyBayLightHouse from '../assets/images/aboutme-bg/whitly-bay-light-house.jpg';
+
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
   ...theme.typography.body2,
@@ -45,22 +71,22 @@ export default function SimplePaper() {
                 width: '50%',
                 height: '25%',
                 margin: '0 auto',
-                backgroundColor: 'rgba(15, 15, 15, 0.8)',
+                backgroundColor: 'rgba(15, 15, 15, 0.9)',
                 color: '#fffefe',
             }}
             >
-                <Typography variant="h4" gutterBottom sx={{margin: '1vw'}}>
-                    Hi, I'm Connor. A T-Level student at middlesbrough college and working for Dink as apart of my placement. I'm not currently looking for work as I plan to go to university after college, feel free to contact me via email or linked in.
+                <Typography variant="h4" gutterBottom sx={{margin: '1vw', textAlign: 'center'}}>
+                    Hi, I'm Connor.<br /> A T-Level student interested in Engineering, cat's, art and photography. I'm not looking for work right now but feel free to message me via linked in or email.
                 </Typography>
             </Paper>
         </Box>
         <Box sx={{ width: '100%', height: '100%', display: 'flex' }}>
-            <Masonry columns={6} spacing={1}>
+            <Masonry columns={9} spacing={1}>
                 {pictures.map((item, index) => (
                 <div key={index}>
+                    <Label sx={{backgroundColor: '#333', color: '#aaa'}}>{item.title}</Label>
                     <img
-                    srcSet={`${item.img}?w=162&auto=format&dpr=2 2x`}
-                    src={`${item.img}?w=162&auto=format`}
+                    src={item.img.src}
                     alt={item.title}
                     loading="lazy"
                     style={{
@@ -80,71 +106,103 @@ export default function SimplePaper() {
 
 const pictures = [
   {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
+    img: Bananas,
+    title: 'bananas',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f',
-    title: 'Snacks',
+    img: Ducks,
+    title: 'ducks',
   },
   {
-    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-    title: 'Mushrooms',
+    img: Edinburgh,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1529655683826-aba9b3e77383',
-    title: 'Tower',
+    img: Edinburgh2,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
+    img: Edinburgh3,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-    title: 'Honey',
+    img: Edinburgh4,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-    title: 'Basketball',
+    img: Edinburgh5,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
+    img: Edinburgh6,
+    title: 'edinburgh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328715728-7bcc1b5db87d',
-    title: 'Tree',
+    img: Halt,
+    title: 'halt',
   },
   {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
+    img: Harry,
+    title: 'harry',
   },
   {
-    img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-    title: 'Camera',
+    img: Iris,
+    title: 'iris',
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Coffee',
+    img: Iris2,
+    title: 'iris',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627000086207-76eabf23aa2e',
-    title: 'Camping Car',
+    img: Josh,
+    title: 'josh',
   },
   {
-    img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-    title: 'Hats',
+    img: Kermit,
+    title: 'kermit',
   },
   {
-    img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
+    img: Loki,
+    title: 'loki',
   },
   {
-    img: 'https://images.unsplash.com/photo-1627328561499-a3584d4ee4f7',
-    title: 'Mountain',
+    img: MbroSnow,
+    title: 'mbro snow',
   },
   {
-    img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+    img: NorthYorkHill,
+    title: 'north york hill',
   },
+  {
+    img: NorthYorkHill2,
+    title: 'north york hill',
+  },
+  {
+    img: PcBuild,
+    title: 'pc build',
+  },
+  {
+    img: Presentation,
+    title: 'presentation',
+  },
+  {
+    img: Josh2,
+    title: 'josh',
+  },
+  {
+    img: Robot,
+    title: 'robot',
+  },
+  {
+    img: Unreal,
+    title: 'unreal',
+  },
+  {
+    img: WhitbyViaDuct,
+    title: 'whitby',
+  },
+  {
+    img: WhitleyBayLightHouse,
+    title: 'Whitley bay',
+  }
 ];
