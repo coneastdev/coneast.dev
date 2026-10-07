@@ -66,7 +66,7 @@ export default function SimplePaper() {
         setValue(newValue);
     };
 
-    const SkillSize = '96';
+    const SkillSize = '80';
     const SkillMargin = '0.25vw'
 
   return (
@@ -99,8 +99,8 @@ export default function SimplePaper() {
                             @coneastdev
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src={collegeImage.src} /> T-Level Digital Software Development</Link><br />
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src={workImage.src} /> Junior Game Development Assistant</Link>
+                            <Link sx={{color: '#ccc', textDecoration: 'none', display: 'flex'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src={collegeImage.src} /> T-Level Digital Software Development</Link>
+                            <Link sx={{color: '#ccc', textDecoration: 'none', display: 'flex'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src={workImage.src} /> Junior Game Development Assistant</Link>
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
                             

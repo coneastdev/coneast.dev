@@ -69,7 +69,7 @@ export default function SimplePaper() {
           ))}
         </Timeline>
         <Container sx={{width: '45%', margin: '0 auto'}}>
-          <Button className="scrollBtn" sx={{width: '100%'}} onClick={() => setCurrentProjects((count) => count + MaxProjects)}>
+          <Button sx={{width: '100%'}} onClick={() => setCurrentProjects((count) => count + MaxProjects)}>
             show more
           </Button>
         </Container>
