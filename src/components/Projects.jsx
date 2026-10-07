@@ -28,6 +28,7 @@ export default function SimplePaper() {
   return (
     <Box id="project-container" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: 'auto', backgroundColor: '#111' }}>
       <Container sx={{width: '50%', margin: '0 auto'}}>
+        <br /><br /><br />
         <Timeline position="alternate" >
           {projects.slice(0, currentProjects).map(({ name, description, tags, links, date }, index) => (
             <TimelineItem>
@@ -72,6 +73,7 @@ export default function SimplePaper() {
             show more
           </Button>
         </Container>
+        <br /><br /><br />
       </Container>
     </Box>
   );
