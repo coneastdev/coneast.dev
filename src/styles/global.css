@@ -10,6 +10,20 @@
     transform: translateY(0);
   }
 }
+@keyframes divSlide {
+  from {
+    transform: translateX(70vw);
+      opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
 
 p {
     font-family: JetBrains Mono;
@@ -21,6 +35,15 @@ a {
 
 .scrollBtn {
   animation: btnSlide 3s 1s both;
+}
+
+.scrollDiv {
+  animation: divSlide 3s both;
+  animation-play-state: paused;
+}
+
+.scrollDiv.is-visible {
+  animation-play-state: running;
 }
 
 @media screen and (width <= 900) {

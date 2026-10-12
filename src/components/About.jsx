@@ -9,7 +9,7 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Alert from '@mui/material/Alert';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import Masonry from '@mui/lab/Masonry';
@@ -25,8 +25,7 @@ import Edinburgh5 from '../assets/images/aboutme-bg/Edinburgh-5.jpg';
 import Edinburgh6 from '../assets/images/aboutme-bg/Edinburgh-6.jpg';
 import Halt from '../assets/images/aboutme-bg/halt.jpg';
 import Harry from '../assets/images/aboutme-bg/harry.jpg'; 
-import Iris from '../assets/images/aboutme-bg/iris.jpg';
-import Iris2 from '../assets/images/aboutme-bg/iris-2.jpg';
+import Iris from '../assets/images/aboutme-bg/iris-2.jpg';
 import Josh from '../assets/images/aboutme-bg/josh.jpg';
 import Kermit from '../assets/images/aboutme-bg/kermit.jpg';
 import Loki from '../assets/images/aboutme-bg/loki.jpg';
@@ -35,7 +34,6 @@ import NorthYorkHill from '../assets/images/aboutme-bg/north-york-hill.jpg';
 import NorthYorkHill2 from '../assets/images/aboutme-bg/north-york-hill-2.jpg';
 import PcBuild from '../assets/images/aboutme-bg/pc-build.jpg';
 import Presentation from '../assets/images/aboutme-bg/presentation.jpeg';
-import Josh2 from '../assets/images/josh.jpg';
 import Robot from '../assets/images/aboutme-bg/robot.png';
 import Unreal from '../assets/images/aboutme-bg/unreal.png';
 import WhitbyViaDuct from '../assets/images/aboutme-bg/whitby-viaduct.jpg';
@@ -55,6 +53,23 @@ const Label = styled(Paper)(({ theme }) => ({
 }));
 
 export default function SimplePaper() {
+  const ref = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+        observer.unobserve(element); // Play once
+      }
+    }, { threshold: 0.2 });
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <Container maxWidth={false} 
@@ -66,7 +81,7 @@ export default function SimplePaper() {
         textAlign: 'center',
     }}
     >
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', position: 'absolute' }}>
+        <Box ref={ref} className={`scrollDiv ${isVisible ? 'is-visible' : ''}`} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', position: 'absolute' }}>
             <Paper elevation={13} sx={{
                 width: '50%',
                 height: '25%',
@@ -84,7 +99,7 @@ export default function SimplePaper() {
             <Masonry columns={9} spacing={1}>
                 {pictures.map((item, index) => (
                 <div key={index}>
-                    <Label sx={{backgroundColor: '#333', color: '#aaa'}}>{item.title}</Label>
+                    {/* <Label sx={{backgroundColor: '#333', color: '#aaa'}}>{item.title}</Label> */}
                     <img
                     src={item.img.src}
                     alt={item.title}
@@ -150,10 +165,6 @@ const pictures = [
     title: 'iris',
   },
   {
-    img: Iris2,
-    title: 'iris',
-  },
-  {
     img: Josh,
     title: 'josh',
   },
@@ -184,10 +195,6 @@ const pictures = [
   {
     img: Presentation,
     title: 'presentation',
-  },
-  {
-    img: Josh2,
-    title: 'josh',
   },
   {
     img: Robot,

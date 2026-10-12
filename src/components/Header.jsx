@@ -83,7 +83,7 @@ export default function SimplePaper() {
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '90%' }}>
             <Paper elevation={13} sx={{
                 width: '100vh',
-                height: '60%',
+                height: '70%',
                 margin: '0 auto',
                 backgroundColor: '#333',
             }}
