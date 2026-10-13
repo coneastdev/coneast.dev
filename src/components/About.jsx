@@ -84,14 +84,18 @@ export default function SimplePaper() {
         <Box ref={ref} className={`scrollDiv ${isVisible ? 'is-visible' : ''}`} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', position: 'absolute' }}>
             <Paper elevation={13} sx={{
                 width: '50%',
-                height: '25%',
+                height: '35%',
                 margin: '0 auto',
                 backgroundColor: 'rgba(15, 15, 15, 0.9)',
                 color: '#fffefe',
             }}
             >
-                <Typography variant="h4" gutterBottom sx={{margin: '1vw', textAlign: 'center'}}>
-                    Hi, I'm Connor.<br /> A T-Level student interested in Engineering, cat's, art and photography. I'm not looking for work right now but feel free to message me via linked in or email.
+                <Typography variant="h5" gutterBottom sx={{margin: '1vw', textAlign: 'center'}}>
+                    Hi, I'm Connor.
+                    <br /><br />
+                    A T-Level software student interested in Engineering. In terms of hobbies, I like cat's, art and photography.
+                    <br /><br />
+                    I'm not looking for work right now but feel free to message me via <Link sx={{color: '#ddd'}} href="https://www.linkedin.com/in/coneastdev/" target="_blank" rel="noopener noreferrer">Linked in</Link> or <Link sx={{color: '#ddd'}} href="mailto:inbox@coneast.dev">email</Link>.
                 </Typography>
             </Paper>
         </Box>

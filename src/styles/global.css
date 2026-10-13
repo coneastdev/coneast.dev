@@ -12,7 +12,7 @@
 }
 @keyframes divSlide {
   from {
-    transform: translateX(70vw);
+    transform: translateX(50vw);
       opacity: 0;
   }
   to {
