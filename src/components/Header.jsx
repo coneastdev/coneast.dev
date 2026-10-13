@@ -66,7 +66,7 @@ export default function SimplePaper() {
         setValue(newValue);
     };
 
-    const SkillSize = 96;
+    const SkillSize = '80';
     const SkillMargin = '0.25vw'
 
   return (
@@ -82,8 +82,8 @@ export default function SimplePaper() {
         {/* { isVisible && <Alert id='AlertNotice' severity="info" sx={{width: '50%', position: 'absolute', left: '25%', top: '2.5%'}} onClose={() => setIsVisible(false)}>This website is still under development, please be aware that some things may be place holders or incomplete.</Alert>} */}
         <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '90%' }}>
             <Paper elevation={13} sx={{
-                width: '40%',
-                height: '60%',
+                width: '100vh',
+                height: '70%',
                 margin: '0 auto',
                 backgroundColor: '#333',
             }}
@@ -99,8 +99,8 @@ export default function SimplePaper() {
                             @coneastdev
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src={collegeImage.src} /> T-Level Digital Software Development</Link><br />
-                            <Link sx={{color: '#ccc', textDecoration: 'none'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src={workImage.src} /> Junior Game Development Assistant</Link>
+                            <Link sx={{color: '#ccc', textDecoration: 'none', display: 'flex'}} href="https://www.mbro.ac.uk/" target="_blank" rel="noopener noreferrer"><SchoolIcon /> <img width="28px" src={collegeImage.src} /> T-Level Digital Software Development</Link>
+                            <Link sx={{color: '#ccc', textDecoration: 'none', display: 'flex'}} href="https://dinkdevs.com/" target="_blank" rel="noopener noreferrer"><WorkIcon /> <img width="28px" src={workImage.src} /> Junior Game Development Assistant</Link>
                         </Typography>
                         <Typography variant="h6" gutterBottom sx={{margin: '0'}}>
                             
@@ -114,6 +114,7 @@ export default function SimplePaper() {
                         </Typography>
                     </Container>
                 </Container>
+                <br />
                 <Container>
                     <Box sx={{ width: '100%' }}>
                         <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
@@ -209,7 +210,7 @@ export default function SimplePaper() {
                 </Container>
             </Paper>
         </Box>
-        <IconButton color="primary" aria-label="Scroll down arrow" size="large" onClick={() => scrollTo("project-container")}>
+        <IconButton className="scrollBtn" color="primary" aria-label="Scroll down arrow" size="large" onClick={() => scrollTo("project-container")}>
             <KeyboardDoubleArrowDownIcon fontSize="inherit" />
         </IconButton>
     </Container>
