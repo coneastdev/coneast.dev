@@ -33,11 +33,12 @@ import MbroSnow from '../assets/images/aboutme-bg/mbro-snow.jpg';
 import NorthYorkHill from '../assets/images/aboutme-bg/north-york-hill.jpg';
 import NorthYorkHill2 from '../assets/images/aboutme-bg/north-york-hill-2.jpg';
 import PcBuild from '../assets/images/aboutme-bg/pc-build.jpg';
-import Presentation from '../assets/images/aboutme-bg/presentation.jpeg';
 import Robot from '../assets/images/aboutme-bg/robot.png';
 import Unreal from '../assets/images/aboutme-bg/unreal.png';
 import WhitbyViaDuct from '../assets/images/aboutme-bg/whitby-viaduct.jpg';
 import WhitleyBayLightHouse from '../assets/images/aboutme-bg/whitly-bay-light-house.jpg';
+import FastFetch from '../assets/images/aboutme-bg/fastfetch.png';
+import Unreal2 from '../assets/images/aboutme-bg/unreal2.png';
 
 const Label = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -84,19 +85,23 @@ export default function SimplePaper() {
         <Box ref={ref} className={`scrollDiv ${isVisible ? 'is-visible' : ''}`} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: '100%', position: 'absolute' }}>
             <Paper elevation={13} sx={{
                 width: '50%',
-                height: '25%',
+                height: '35%',
                 margin: '0 auto',
                 backgroundColor: 'rgba(15, 15, 15, 0.9)',
                 color: '#fffefe',
             }}
             >
-                <Typography variant="h4" gutterBottom sx={{margin: '1vw', textAlign: 'center'}}>
-                    Hi, I'm Connor.<br /> A T-Level student interested in Engineering, cat's, art and photography. I'm not looking for work right now but feel free to message me via linked in or email.
+                <Typography variant="h5" gutterBottom sx={{margin: '1vw', textAlign: 'center'}}>
+                    Hi, I'm Connor 👋🏻
+                    <br /><br />
+                    A T-Level software student interested in embedded systems and robotics. My hobbies include a love for cat's, art, and photography.
+                    <br /><br />
+                    I'm not looking for work right now but feel free to message me via <Link sx={{color: '#ddd'}} href="https://www.linkedin.com/in/coneastdev/" target="_blank" rel="noopener noreferrer">Linked in</Link> or <Link sx={{color: '#ddd'}} href="mailto:inbox@coneast.dev">email</Link>.
                 </Typography>
             </Paper>
         </Box>
         <Box sx={{ width: '100%', height: '100%', display: 'flex' }}>
-            <Masonry columns={9} spacing={1}>
+            <Masonry columns={8} spacing={0.5}>
                 {pictures.map((item, index) => (
                 <div key={index}>
                     {/* <Label sx={{backgroundColor: '#333', color: '#aaa'}}>{item.title}</Label> */}
@@ -125,31 +130,20 @@ const pictures = [
     title: 'bananas',
   },
   {
-    img: Ducks,
-    title: 'ducks',
-  },
-  {
     img: Edinburgh,
     title: 'edinburgh',
   },
-  {
-    img: Edinburgh2,
-    title: 'edinburgh',
-  },
+  
   {
     img: Edinburgh3,
     title: 'edinburgh',
   },
   {
+    img: Harry,
+    title: 'harry',
+  },
+  {
     img: Edinburgh4,
-    title: 'edinburgh',
-  },
-  {
-    img: Edinburgh5,
-    title: 'edinburgh',
-  },
-  {
-    img: Edinburgh6,
     title: 'edinburgh',
   },
   {
@@ -157,8 +151,12 @@ const pictures = [
     title: 'halt',
   },
   {
-    img: Harry,
-    title: 'harry',
+    img: Edinburgh5,
+    title: 'edinburgh',
+  },
+  {
+    img: NorthYorkHill2,
+    title: 'north york hill',
   },
   {
     img: Iris,
@@ -173,6 +171,10 @@ const pictures = [
     title: 'kermit',
   },
   {
+    img: Edinburgh2,
+    title: 'edinburgh',
+  },
+  {
     img: Loki,
     title: 'loki',
   },
@@ -185,16 +187,13 @@ const pictures = [
     title: 'north york hill',
   },
   {
-    img: NorthYorkHill2,
-    title: 'north york hill',
+    img: Edinburgh6,
+    title: 'edinburgh',
   },
+  
   {
     img: PcBuild,
     title: 'pc build',
-  },
-  {
-    img: Presentation,
-    title: 'presentation',
   },
   {
     img: Robot,
@@ -208,8 +207,20 @@ const pictures = [
     img: WhitbyViaDuct,
     title: 'whitby',
   },
+    {
+    img: Ducks,
+    title: 'ducks',
+  },
   {
     img: WhitleyBayLightHouse,
     title: 'Whitley bay',
+  },
+  {
+    img: FastFetch,
+    title: 'Fast Fetch',
+  },
+  {
+    img: Unreal2,
+    title: 'unreal',
   }
 ];
